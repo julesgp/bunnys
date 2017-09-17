@@ -1,26 +1,26 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import HeaderMenu from 'HeaderMenu.js';
+import HeaderMenu from './components/HeaderMenu.js';
 
 
-class App extends Component {
-	constructor(){
-		super();
-		this.state()={
-			displayHeaderMenu:true,
-		};
-	}
-
+class App extends React.Component {
+    constructor(){
+        super();
+        this.state={
+            displayHeaderMenu:true,
+        }
+    }
     render(){
     	let displayHeader= "";
     	if(this.state.displayHeaderMenu === true){
-    		showGame = (
+    		displayHeader = (
     			<HeaderMenu />
     		)
     	}
-
     	return (
-    	    {showGame}
+            <div>
+                {displayHeader}
+            </div>
     	)
     }
 }

@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export default class HeaderMenu extends Component{
+export default class HeaderMenu extends React.Component{
 	render(){
 		return(
-			<header className="header">
-				<div></div>
-				<div></div>
-			</header>
+			<div className="header">
+				<div>Hello</div>
+				<div> What is up</div>
+			</div>
 		)
 	}
 }
