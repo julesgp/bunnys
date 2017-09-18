@@ -1,25 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HeaderMenu from './components/HeaderMenu.js';
-
+import LandingPage from './components/landingPage.js';
+var FontAwesome = require('react-fontawesome');
 
 class App extends React.Component {
     constructor(){
         super();
         this.state={
-            displayHeaderMenu:true,
+            displayLandingPage:true,
         }
     }
     render(){
-    	let displayHeader= "";
-    	if(this.state.displayHeaderMenu === true){
-    		displayHeader = (
-    			<HeaderMenu />
+    	let displayLanding= "";
+    	if(this.state.displayLandingPage === true){
+    		displayLanding = (
+    			<LandingPage />
     		)
     	}
     	return (
-            <div>
-                {displayHeader}
+            <div className="mainContainer">
+                {displayLanding}
             </div>
     	)
     }

@@ -116,3 +116,87 @@ body, figure {
 legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
+
+.mainContainer {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 30px; }
+
+.header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 100%; }
+
+.address {
+  width: 50%; }
+
+.contact {
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+  .contact a {
+    text-decoration: none;
+    color: black; }
+    .contact a:hover {
+      color: blue; }
+  .contact h3 {
+    margin-right: 10px; }
+  .contact span {
+    font-size: 40px;
+    margin-left: 5px; }
+  .contact .phone {
+    font-size: 30px;
+    letter-spacing: 1px; }
+  .contact .mail {
+    margin-left: 10px; }
+
+.main {
+  width: 100%; }
+
+.bunnysMain {
+  width: 60%;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+  .bunnysMain .bunnysImg {
+    height: 311px;
+    width: 180px;
+    border: 5px solid blue;
+    margin-right: 10px;
+    margin-left: 10px; }
+  .bunnysMain .bunnysContent {
+    margin-top: 70px;
+    font-size: 70px; }
+  .bunnysMain .you {
+    font-size: 109px; }
+
+.footer {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center; }
+  .footer .hours {
+    width: 80%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+    .footer .hours h3 {
+      width: 20%; }
+  .footer .mainMenu {
+    width: 20%; }

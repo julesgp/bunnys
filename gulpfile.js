@@ -10,6 +10,8 @@ const plumber = require('gulp-plumber');
 const sass = require("gulp-sass");
 const concat = require("gulp-concat");
 const autoprefixer = require('gulp-autoprefixer');
+const FontAwesome = require('react-fontawesome');
+
 
 gulp.task('js', () => {
     browserify('src/app.js', {debug: true})
