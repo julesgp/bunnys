@@ -7,10 +7,10 @@ export default class LandingPage extends React.Component{
 			<div className="landingPage">
 				<div className="header">
 					<div className="address">
-						<h3>912 Queen Street East, Toronto</h3>
+						<h3><span>912 Queen Street East.</span> Toronto</h3>
 					</div>
 					<div className="contact">
-						<a href="tel:+16473406439" className="phone"> <h3>(647)340-6439</h3></a>
+						<a href="tel:+16473406439" className="phone"> <h3><span>(647)</span>340-6439</h3></a>
 						<a href="https://www.instagram.com/bunnysrestaurant/"><FontAwesome name="instagram"/></a>
 						<a href="mailto:info@somebunnylovesyou"><FontAwesome name="envelope" className="mail"/></a>
 					</div>

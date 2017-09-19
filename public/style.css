@@ -118,9 +118,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0; }
 
 .mainContainer {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
-  padding-top: 30px; }
+  padding-top: 15px;
+  font-family: "Encode Sans Condensed", sans-serif; }
 
 .header {
   display: -ms-flexbox;
@@ -131,6 +132,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .address {
   width: 50%; }
+  .address span {
+    font-size: 30px;
+    color: rgba(112, 23, 94, 0.8); }
 
 .contact {
   width: 50%;
@@ -146,7 +150,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     text-decoration: none;
     color: black; }
     .contact a:hover {
-      color: blue; }
+      color: rgba(112, 23, 94, 0.8); }
   .contact h3 {
     margin-right: 10px; }
   .contact span {
@@ -155,6 +159,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   .contact .phone {
     font-size: 30px;
     letter-spacing: 1px; }
+    .contact .phone span {
+      font-size: 30px;
+      margin-right: 10px; }
   .contact .mail {
     margin-left: 10px; }
 
@@ -167,13 +174,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-      flex-direction: row; }
+      flex-direction: row;
+  color: rgba(112, 23, 94, 0.8);
+  font-size: 80px; }
   .bunnysMain .bunnysImg {
     height: 311px;
     width: 180px;
-    border: 5px solid blue;
-    margin-right: 10px;
-    margin-left: 10px; }
+    border: 8px solid rgba(112, 23, 94, 0.8);
+    margin-right: 20px;
+    margin-left: 20px; }
   .bunnysMain .bunnysContent {
     margin-top: 70px;
     font-size: 70px; }
@@ -186,17 +195,36 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  -ms-flex-align: center;
-      align-items: center; }
+  -ms-flex-align: end;
+      align-items: flex-end;
+  font-size: 25px;
+  letter-spacing: 3px; }
   .footer .hours {
-    width: 80%;
+    width: 50%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin: none; }
+    .footer .hours h3 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+      margin-bottom: 0; }
+  .footer .mainMenu {
+    width: 50%;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-pack: end;
         justify-content: flex-end; }
-    .footer .hours h3 {
-      width: 20%; }
-  .footer .mainMenu {
-    width: 20%; }
+    .footer .mainMenu .menu {
+      background-color: white;
+      border: 8px solid rgba(112, 23, 94, 0.8);
+      font-size: 50px;
+      padding: 5px 25px; }
+      .footer .mainMenu .menu:hover {
+        color: rgba(112, 23, 94, 0.8);
+        border-color: black; }
