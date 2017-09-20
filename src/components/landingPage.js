@@ -34,7 +34,7 @@ export default class LandingPage extends React.Component{
 						<h3>Sun: 9-9</h3>
 					</div>
 					<div className="mainMenu">
-						<button className="menu">menu</button>
+						<button className="menu" onClick={this.props.moveToMenu}>menu</button>
 					</div>
 				</div>{/* end of footer*/}
 			</div>

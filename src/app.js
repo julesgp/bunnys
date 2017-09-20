@@ -8,15 +8,26 @@ class App extends React.Component {
         super();
         this.state={
             displayLandingPage:true,
+            displayMenus:false,
         }
+        this.openMenu = this.openMenu.bind(this);
     }
+
+    openMenu(){
+        this.setState({
+            displayLandingPage:false,
+            displayMenus:true,
+        });
+    }
+
     render(){
     	let displayLanding= "";
     	if(this.state.displayLandingPage === true){
     		displayLanding = (
-    			<LandingPage />
+    			<LandingPage moveToMenu={this.openMenu}/>
     		)
     	}
+
     	return (
             <div className="mainContainer">
                 {displayLanding}
